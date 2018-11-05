@@ -12,11 +12,11 @@ import java.util.Random;
 public class DemoServlet extends HttpServlet {
     private int testNum = 0;
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        try {
-            Thread.sleep(new Random().nextInt() * 1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(new Random().nextInt() * 1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         testNum++;
         int tempNum = testNum;
 //        String name = request.getParameter("name");
