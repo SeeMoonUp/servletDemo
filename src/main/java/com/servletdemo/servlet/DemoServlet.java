@@ -21,7 +21,8 @@ public class DemoServlet extends HttpServlet {
         int tempNum = testNum;
 //        String name = request.getParameter("name");
         System.out.println(tempNum + ",thread" + Thread.currentThread().getName());
-        response.getWriter().print(tempNum);
+//        response.getWriter().print(tempNum);
+        response.sendRedirect("https://seemoonup.github.io/");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
