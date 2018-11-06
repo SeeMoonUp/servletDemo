@@ -13,8 +13,13 @@
     <servlet-name>Demo</servlet-name>
     <url-pattern>/doDemo</url-pattern>
   </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Demo</servlet-name>
+    <url-pattern>/index.html</url-pattern>
+  </servlet-mapping>
     
-    <welcome-file-list>
-        <welcome-file>/doDemo</welcome-file>
-    </welcome-file-list>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
 </web-app>
