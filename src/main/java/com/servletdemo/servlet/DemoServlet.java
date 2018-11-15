@@ -20,7 +20,7 @@ public class DemoServlet extends HttpServlet {
         testNum++;
         int tempNum = testNum;
 //        String name = request.getParameter("name");
-        System.out.println(tempNum + ",thread" + Thread.currentThread().getName());
+//        System.out.println(tempNum + ",thread" + Thread.currentThread().getName());
         request.getRequestDispatcher("/WEB-INF/jsp/navigation.jsp").forward(request, response);
 //        response.getWriter().print(tempNum);
 //        response.sendRedirect("https://seemoonup.github.io/");
