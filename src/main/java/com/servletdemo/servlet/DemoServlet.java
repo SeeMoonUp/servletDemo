@@ -21,8 +21,9 @@ public class DemoServlet extends HttpServlet {
         int tempNum = testNum;
 //        String name = request.getParameter("name");
         System.out.println(tempNum + ",thread" + Thread.currentThread().getName());
+        request.getRequestDispatcher("/WEB-INF/jsp/navigation.jsp").forward(request, response);
 //        response.getWriter().print(tempNum);
-        response.sendRedirect("https://seemoonup.github.io/");
+//        response.sendRedirect("https://seemoonup.github.io/");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
