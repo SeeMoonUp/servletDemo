@@ -14,8 +14,8 @@
     <meta content="一个极简的网址导航，聚合了多种搜索引擎，收录了各种常用网站。分类合理，内容齐全。处处细微，一切都是理所当然。万花筒，一万个人眼里有一万个世界。" name="description">
     <meta content="万花筒,导航,网址导航,导航网站,常用网站,常用网址,大学生导航,程序员导航,设计导航,学习导航" name="keywords">
     <link href="static/style.css" rel="stylesheet">
-    <link href="https://wht.im/assets/img/common/icon_64.png" rel="shortcut icon" type="image/png">
-    <link href="https://wht.im/assets/img/common/icon_512.png" rel="apple-touch-icon">
+    <link href="static/img/logobig.png" rel="shortcut icon" type="image/png">
+    <link href="static/img/logobig.png" rel="apple-touch-icon">
     <script>window.ga = window.ga || function () {
         (ga.q = ga.q || []).push(arguments)
     };
