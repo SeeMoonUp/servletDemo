@@ -203,7 +203,7 @@
     </footer>
 </div>
 <script src="static/main.js"></script>
-<script src="static/index.js"></script>
+<script src="static/index.js?1"></script>
 </body>
 </html>
 
