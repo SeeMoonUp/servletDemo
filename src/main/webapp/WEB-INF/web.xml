@@ -7,15 +7,33 @@
 
   <servlet>
     <servlet-name>Demo</servlet-name>
-    <servlet-class>com.servletdemo.servlet.DemoServlet</servlet-class>
+    <servlet-class>com.javalemon.controller.DemoServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Demo</servlet-name>
     <url-pattern>/doDemo</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>DataSource</servlet-name>
+    <servlet-class>com.javalemon.controller.DataSourceTestServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
-    <servlet-name>Demo</servlet-name>
+    <servlet-name>DataSource</servlet-name>
+    <url-pattern>/dataSourceTest</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>dh</servlet-name>
+    <servlet-class>com.javalemon.controller.DaoHangServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dh</servlet-name>
+    <url-pattern>/dh</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>dh</servlet-name>
     <url-pattern>/index.html</url-pattern>
   </servlet-mapping>
     
