@@ -10,12 +10,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>layui</title>
+    <title>lemon导航</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="static/layui/css/layui.css"  media="all">
     <link rel="stylesheet" href="//res.layui.com/static/css/global.css?t=1542630986927-6" media="all">
+    <link href="static/img/logobig.png" rel="shortcut icon" type="image/png">
+    <link href="static/img/logobig.png" rel="apple-touch-icon">
     <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
     <style>
         .class_outer{
@@ -154,8 +156,7 @@
                 </a>
             </div>
             <div class="layui-col-md4">
-                <a href="#" class="class_outer">
-                <%--<a href="https://blog.javalemon.com/" title="作者个人博客">--%>
+                <a href="https://blog.javalemon.com/" class="class_outer">
                     <div style="background-image: url('static/img/mineblog.jpeg');height: 15em; background-size: cover; background-position: center center;">
                     </div>
                     <span class="class_cover"><span class="content">lemon<br>作者的个人博客</span></span>
