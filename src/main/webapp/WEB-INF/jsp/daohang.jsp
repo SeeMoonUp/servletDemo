@@ -157,7 +157,7 @@
                                 <div><a href="http://www.aliued.cn" target="_blank">阿里UED</a> </div>
                             </div>
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="https://tech.meituan.com/" target="_blank">美团技术博客</a> </div>
+                                <div><a href="https://tech.meituan.com/" target="_blank">美团技术</a> </div>
                             </div>
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
                                 <div><a href="https://www.jianshu.com/" target="_blank">简书</a> </div>
