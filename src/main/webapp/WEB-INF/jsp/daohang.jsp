@@ -76,15 +76,39 @@
                         <li class="layui-this">谷歌</li>
                         <li>必应</li>
                         <li>图片</li>
-                        <li>百科</li>
+                        <li>Linux</li>
                         <%--<li>种子</li>--%>
-                        <li>学术</li>
+                        <%--<li>学术</li>--%>
                     </ul>
-                    <div class="layui-tab-content"></div>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item">
+                            <form class="layui-form layui-form-pane" action="https://www.baidu.com/s" target="_blank">
+                                <input type="text" name="word" required lay-verify="required" placeholder="百度一下 你就知道" autocomplete="off" class="layui-input">
+                            </form>
+                        </div>
+                        <div class="layui-tab-item layui-show">
+                            <form class="layui-form layui-form-pane" action="https://www.google.com/search" target="_blank">
+                                <input id="googlesearch" type="text" name="q" required lay-verify="required" placeholder="Google 搜索" autocomplete="off" class="layui-input">
+                            </form>
+                        </div>
+                        <div class="layui-tab-item">
+                            <form class="layui-form layui-form-pane" action="https://cn.bing.com/search" target="_blank">
+                                <input type="text" name="q" required lay-verify="required" placeholder="微软必应 搜索" autocomplete="off" class="layui-input">
+                            </form>
+                        </div>
+                        <div class="layui-tab-item">
+                            <form class="layui-form layui-form-pane" action="https://cn.bing.com/images/search" target="_blank">
+                                <input type="text" name="q" required lay-verify="required" placeholder="海量图片任你搜索" autocomplete="off" class="layui-input">
+                            </form>
+                        </div>
+                        <div class="layui-tab-item" id="formlinux">
+                            <form class="layui-form layui-form-pane" action="" onsubmit="return false;" target="_blank">
+                                <input type="text" name="#!kw" id="linuxkw" required lay-verify="required" placeholder="Linux命令搜索" autocomplete="off" class="layui-input">
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
-                <form class="layui-form layui-form-pane" action="">
-                    <input type="text" name="title" required lay-verify="required" placeholder="Google 搜索" autocomplete="off" class="layui-input">
-                </form>
             </div>
 
         </div>
@@ -108,57 +132,18 @@
                         </div>
                         <div class="layui-col-xs10 layui-col-sm10 layui-col-md10">
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">Github</a> </div>
+                                <div><a href="https://github.com/" target="_blank">Github</a> </div>
                             </div>
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">Stack Overflow</a> </div>
+                                <div><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a> </div>
                             </div>
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">IBM Developer</a> </div>
-                            </div>
-                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">技术</a> </div>
-                            </div>
-                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">技术</a> </div>
-                            </div>
-                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">技术</a> </div>
+                                <div><a href="https://developer.ibm.com/" target="_blank">IBM Developer</a> </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-                <div class="layui-row grid">
-                    <div class="layui-col-xs12 layui-col-md10 layui-col-md-offset1">
-                        <div class="layui-col-xs2 layui-col-sm2 layui-col-md2 layui-word-aux">
-                            <div>学习</div>
-                        </div>
-                        <div class="layui-col-xs10 layui-col-sm10 layui-col-md10">
-                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">LeetCode</a> </div>
-                            </div>
-                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">极客时间</a> </div>
-                            </div>
-                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">网易公开课</a> </div>
-                            </div>
-                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">腾讯课堂</a> </div>
-                            </div>
-                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">慕课</a> </div>
-                            </div>
-                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">MBA智库</a> </div>
-                            </div>
-                        </div>
 
-                    </div>
-
-                </div>
                 <div class="layui-row grid">
                     <div class="layui-col-xs12 layui-col-md10 layui-col-md-offset1">
                         <div class="layui-col-xs2 layui-col-sm2 layui-col-md2 layui-word-aux">
@@ -166,27 +151,50 @@
                         </div>
                         <div class="layui-col-xs10 layui-col-sm10 layui-col-md10">
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">掘金</a> </div>
+                                <div><a href="https://juejin.im/" target="_blank">掘金</a> </div>
                             </div>
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">阿里UED</a> </div>
+                                <div><a href="http://www.aliued.cn" target="_blank">阿里UED</a> </div>
                             </div>
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">美团技术博客</a> </div>
+                                <div><a href="https://tech.meituan.com/" target="_blank">美团技术博客</a> </div>
                             </div>
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">简书</a> </div>
+                                <div><a href="https://www.jianshu.com/" target="_blank">简书</a> </div>
                             </div>
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">豆瓣</a> </div>
+                                <div><a href="https://www.douban.com/" target="_blank">豆瓣</a> </div>
                             </div>
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">MBA智库</a> </div>
+                                <div><a href="https://wiki.mbalib.com/" target="_blank">MBA智库</a> </div>
                             </div>
                         </div>
-
                     </div>
+                </div>
 
+                <div class="layui-row grid">
+                    <div class="layui-col-xs12 layui-col-md10 layui-col-md-offset1">
+                        <div class="layui-col-xs2 layui-col-sm2 layui-col-md2 layui-word-aux">
+                            <div>学习</div>
+                        </div>
+                        <div class="layui-col-xs10 layui-col-sm10 layui-col-md10">
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="https://leetcode.com/" target="_blank">LeetCode</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="https://time.geekbang.org/" target="_blank">极客邦</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="https://open.163.com/" target="_blank">网易公开课</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="https://ke.qq.com/" target="_blank">腾讯课堂</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="https://www.imooc.com/" target="_blank">慕课</a> </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="layui-row grid">
@@ -196,27 +204,16 @@
                         </div>
                         <div class="layui-col-xs10 layui-col-sm10 layui-col-md10">
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">阿里云</a> </div>
+                                <div><a href="https://www.aliyun.com/" target="_blank">阿里云</a> </div>
                             </div>
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">腾讯云</a> </div>
+                                <div><a href="https://cloud.tencent.com/" target="_blank">腾讯云</a> </div>
                             </div>
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">七牛</a> </div>
-                            </div>
-                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">简书</a> </div>
-                            </div>
-                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">豆瓣</a> </div>
-                            </div>
-                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">MBA智库</a> </div>
+                                <div><a href="https://www.qiniu.com/" target="_blank">七牛</a> </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
 
                 <div class="layui-row grid">
@@ -226,24 +223,26 @@
                         </div>
                         <div class="layui-col-xs10 layui-col-sm10 layui-col-md10">
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">转码</a> </div>
+                                <div><a href="http://www.jsons.cn/urlencode/" target="_blank">转码</a> </div>
                             </div>
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">JSON</a> </div>
+                                <div><a href="https://www.json.cn/" target="_blank">JSON</a> </div>
                             </div>
                             <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
-                                <div><a href="">压缩</a> </div>
+                                <div><a href="https://tinypng.com/" target="_blank">图片压缩</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="https://tool.lu/" target="_blank">工具大全</a> </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
 
             </div>
 
         </div>
 
+        <!--个人信息-->
         <div class="layui-row">
             <div class="layui-col-xs12 layui-col-sm8 layui-col-md8">
                 <a href="javascript:void(0);">
@@ -347,7 +346,7 @@
         var layer = layui.layer
             ,form = layui.form;
 
-        // layer.msg('Hello World');w
+        // layer.msg('Hello World');
     }();
 
     layui.use('layer', function() { //独立版的layer无需执行这一句
@@ -389,6 +388,12 @@
         }).mouseout(function () {
             $(this).css("opacity","0");
         })
+
+        $('#formlinux').submit(function () {
+            window.open("http://wangchujiang.com/linux-command/list.html#!kw=" + $('#linuxkw').val(), "_blank");
+        })
+
+        $("#googlesearch").focus();
     });
 
 </script>
