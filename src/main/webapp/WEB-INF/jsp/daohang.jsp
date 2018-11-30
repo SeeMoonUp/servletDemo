@@ -15,7 +15,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="static/layui/css/layui.css"  media="all">
-    <link rel="stylesheet" href="//res.layui.com/static/css/global.css?t=1542630986927-6" media="all">
     <link href="static/img/logobig.png" rel="shortcut icon" type="image/png">
     <link href="static/img/logobig.png" rel="apple-touch-icon">
     <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
@@ -47,6 +46,17 @@
         .class_cover :hover {
             opacity: 1;
         }
+        .center{
+            text-align: center;
+        }
+        .grid{
+            padding: 10px;
+            line-height: 30px;
+            text-align: center;
+        }
+        .grid a{
+            color: #736a6a;
+        }
     </style>
 </head>
 <body  class="layui-bg-green" style="font-size: 16px;">
@@ -59,7 +69,7 @@
     <div class="layui-container" style="background-color: #ffffff;color: black;margin-top: 4em;padding: 0px;">
         <!--搜索引擎-->
         <div class="layui-row" style="padding-top: 2em;">
-            <div class="layui-col-md6 layui-col-md-offset3">
+            <div class="layui-col-xs10 layui-col-sm12 layui-col-md6 layui-col-xs-offset1 layui-col-md-offset3">
                 <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
                     <ul class="layui-tab-title">
                         <li>百度</li>
@@ -67,13 +77,13 @@
                         <li>必应</li>
                         <li>图片</li>
                         <li>百科</li>
-                        <li>种子</li>
+                        <%--<li>种子</li>--%>
                         <li>学术</li>
                     </ul>
                     <div class="layui-tab-content"></div>
                 </div>
                 <form class="layui-form layui-form-pane" action="">
-                    <input type="text" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                    <input type="text" name="title" required lay-verify="required" placeholder="Google 搜索" autocomplete="off" class="layui-input">
                 </form>
             </div>
 
@@ -82,7 +92,7 @@
         <!--网址推荐-->
         <div class="layui-row layui-bg-gray" style="margin-top: 4em;">
             <%--<div class="layui-row" style="padding-top: 2em;">--%>
-                <%--<div class="layui-col-md6 layui-col-md-offset3">--%>
+                <%--<div class="layui-col-xs6 layui-col-sm6 layui-col-md6 layui-col-md-offset3">--%>
                     <%--<button class="layui-btn layui-btn-radius layui-btn-sm layui-btn-primary">原始按钮</button>--%>
                     <%--<button class="layui-btn layui-btn-radius layui-btn-sm layui-btn-primary">原始按钮</button>--%>
                     <%--<button class="layui-btn layui-btn-radius layui-btn-sm layui-btn-primary">原始按钮</button>--%>
@@ -90,72 +100,158 @@
                 <%--</div>--%>
             <%--</div>--%>
 
-            <div style="padding-top: 2em;padding-bottom: 2em;">
-                <div class="layui-row">
-                    <div class="layui-col-md1 layui-col-md-offset2">
-                        <div>技术</div>
+            <div style="padding-top: 2em;padding-bottom: 2em;" class="center">
+                <div class="layui-row grid">
+                    <div class="layui-col-xs12 layui-col-md10 layui-col-md-offset1">
+                        <div class="layui-col-xs2 layui-col-sm2 layui-col-md2 layui-word-aux">
+                            <div>技术</div>
+                        </div>
+                        <div class="layui-col-xs10 layui-col-sm10 layui-col-md10">
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">Github</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">Stack Overflow</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">IBM Developer</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">技术</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">技术</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">技术</a> </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="layui-col-md9">
-                    <span class="layui-breadcrumb layui-col-space20" lay-separator=" ">
-                      <a href="">github</a>
-                      <a href="">Stack Overflow</a>
-                      <a href="">ibm developer</a>
-                    </span>
-                    </div>
+
                 </div>
-                <div class="layui-row" style="padding-top: 1em;">
-                    <div class="layui-col-md1 layui-col-md-offset2">
-                        <div>学习</div>
+                <div class="layui-row grid">
+                    <div class="layui-col-xs12 layui-col-md10 layui-col-md-offset1">
+                        <div class="layui-col-xs2 layui-col-sm2 layui-col-md2 layui-word-aux">
+                            <div>学习</div>
+                        </div>
+                        <div class="layui-col-xs10 layui-col-sm10 layui-col-md10">
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">LeetCode</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">极客时间</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">网易公开课</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">腾讯课堂</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">慕课</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">MBA智库</a> </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="layui-col-md9">
-                    <span class="layui-breadcrumb layui-col-space20" lay-separator=" ">
-                      <a href="">LeetCode</a>
-                      <a href="">极客时间</a>
-                      <a href="">网易公开课</a>
-                      <a href="">腾讯课堂</a>
-                      <a href="">慕课</a>
-                      <a href="">MBA智库</a>
-                    </span>
-                    </div>
+
                 </div>
-                <div class="layui-row" style="padding-top: 1em;">
-                    <div class="layui-col-md1 layui-col-md-offset2">
-                        <div>阅读</div>
+                <div class="layui-row grid">
+                    <div class="layui-col-xs12 layui-col-md10 layui-col-md-offset1">
+                        <div class="layui-col-xs2 layui-col-sm2 layui-col-md2 layui-word-aux">
+                            <div>阅读</div>
+                        </div>
+                        <div class="layui-col-xs10 layui-col-sm10 layui-col-md10">
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">掘金</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">阿里UED</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">美团技术博客</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">简书</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">豆瓣</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">MBA智库</a> </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="layui-col-md9">
-                    <span class="layui-breadcrumb layui-col-space20" lay-separator=" ">
-                      <a href="">掘金</a>
-                      <a href="">阿里UED</a>
-                      <a href="">美团技术博客</a>
-                      <a href="">简书</a>
-                      <a href="">豆瓣</a>
-                    </span>
-                    </div>
+
                 </div>
-                <div class="layui-row" style="padding-top: 1em;">
-                    <div class="layui-col-md1 layui-col-md-offset2">
-                        <div>平台</div>
+
+                <div class="layui-row grid">
+                    <div class="layui-col-xs12 layui-col-md10 layui-col-md-offset1">
+                        <div class="layui-col-xs2 layui-col-sm2 layui-col-md2 layui-word-aux">
+                            <div>平台</div>
+                        </div>
+                        <div class="layui-col-xs10 layui-col-sm10 layui-col-md10">
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">阿里云</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">腾讯云</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">七牛</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">简书</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">豆瓣</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">MBA智库</a> </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="layui-col-md9">
-                    <span class="layui-breadcrumb layui-col-space20" lay-separator=" ">
-                      <a href="">阿里云</a>
-                      <a href="">腾讯云</a>
-                      <a href="">七牛</a>
-                    </span>
-                    </div>
+
                 </div>
+
+                <div class="layui-row grid">
+                    <div class="layui-col-xs12 layui-col-md10 layui-col-md-offset1">
+                        <div class="layui-col-xs2 layui-col-sm2 layui-col-md2 layui-word-aux">
+                            <div>工具</div>
+                        </div>
+                        <div class="layui-col-xs10 layui-col-sm10 layui-col-md10">
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">转码</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">JSON</a> </div>
+                            </div>
+                            <div class="layui-col-xs3 layui-col-sm2 layui-col-md2">
+                                <div><a href="">压缩</a> </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
         <div class="layui-row">
-            <div class="layui-col-md8">
+            <div class="layui-col-xs12 layui-col-sm8 layui-col-md8">
                 <a href="javascript:void(0);">
                     <div style="background-image: url('static/img/moon.jpg');height: 15em; background-size: cover; background-position: center center;">
                     </div>
                 </a>
             </div>
-            <div class="layui-col-md4">
+            <div class="layui-col-xs12 layui-col-sm4 layui-col-md4">
                 <a href="https://blog.javalemon.com/" class="class_outer">
                     <div style="background-image: url('static/img/mineblog.jpeg');height: 15em; background-size: cover; background-position: center center;">
                     </div>
@@ -171,25 +267,25 @@
 
         <div class="layui-fluid">
             <div class="row layui-col-space12 layui-clear">
-                <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+                <div class="layui-col-xs6 layui-col-sm6 layui-col-xs3 layui-col-sm3 layui-col-md3">
                     <div class="img-txt">
                         <img style="width: 100%;" src="static/img/mineblog.jpeg" alt="">
                         <h3>java基础</h3>
                     </div>
                 </div>
-                <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+                <div class="layui-col-xs6 layui-col-sm6 layui-col-xs3 layui-col-sm3 layui-col-md3">
                     <div class="img-txt">
                         <img style="width: 100%;" src="static/img/mineblog.jpeg" alt="">
                         <h3>Tomcat</h3>
                     </div>
                 </div>
-                <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+                <div class="layui-col-xs6 layui-col-sm6 layui-col-xs3 layui-col-sm3 layui-col-md3">
                     <div class="img-txt">
                         <img style="width: 100%;" src="static/img/mineblog.jpeg" alt="">
                         <h3>Spring</h3>
                     </div>
                 </div>
-                <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+                <div class="layui-col-xs6 layui-col-sm6 layui-col-xs3 layui-col-sm3 layui-col-md3">
                     <div class="img-txt">
                         <img style="width: 100%;" src="static/img/mineblog.jpeg" alt="">
                         <h3>Nginx</h3>
@@ -202,7 +298,7 @@
 
         <div style="padding: 4em;" class="layui-bg-gray">
             <div class="layui-row layui-col-space15">
-                <div class="layui-col-md6">
+                <div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
                     <div class="layui-card">
                         <div class="layui-card-header">热门搜索</div>
                         <div class="layui-card-body">
@@ -213,7 +309,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="layui-col-md6">
+                <div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
                     <div class="layui-card">
                         <div class="layui-card-header">热门留言</div>
                         <div class="layui-card-body">
@@ -229,7 +325,7 @@
 
         <div style="text-align: center; padding: 2em;" class="layui-bg-gray">
             <div class="layui-row ">
-                <div class="layui-col-md12">
+                <div class="layui-col-xs1 layui-col-sm1 layui-col-xs12 layui-col-sm12 layui-col-md12">
                     <button class="layui-btn layui-btn-radius layui-btn-warm">留言</button>
                     <button class="layui-btn layui-btn-radius">建议</button>
                     <button data-method="notice" class="layui-btn layui-btn-radius layui-btn-primary">带走我</button>
