@@ -41,6 +41,15 @@
     <url-pattern>/timeline.json</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>pub</servlet-name>
+    <servlet-class>com.javalemon.controller.WhiteShirtPubServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pub</servlet-name>
+    <url-pattern>/pub.json</url-pattern>
+  </servlet-mapping>
+
   <servlet-mapping>
     <servlet-name>dh</servlet-name>
     <url-pattern>/index.html</url-pattern>
