@@ -32,6 +32,15 @@
     <url-pattern>/dh</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>timeline</servlet-name>
+    <servlet-class>com.javalemon.controller.WhiteShirtServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>timeline</servlet-name>
+    <url-pattern>/timeline.json</url-pattern>
+  </servlet-mapping>
+
   <servlet-mapping>
     <servlet-name>dh</servlet-name>
     <url-pattern>/index.html</url-pattern>
