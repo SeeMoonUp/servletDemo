@@ -26,16 +26,6 @@ public class WhiteShirtServlet extends HttpServlet {
 
         List<Map<String, Object>> result = WhiteShirtData.data;
 
-        Map<String, Object> one = new HashMap<String, Object>();
-        one.put("id", 5);
-        one.put("nickname", "lemon");
-        one.put("avatarUrl", "");
-        one.put("time", "");
-        one.put("text", "第一个消息（白衬衫）");
-        one.put("original_pic", "");
-        one.put("comment_count", 12);
-        one.put("like_count", 12);
-        result.add(one);
         response.setHeader("content-type","text/html;charset=UTF-8");
         response.getWriter().print(JSONArray.fromObject(result));
 
