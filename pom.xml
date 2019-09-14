@@ -125,7 +125,17 @@
         <version>4.12</version>
         <scope>test</scope>
       </dependency>
-    <!-- qiniu sdk start-->
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.12</version>
+      </dependency>
+      <!-- qiniu sdk start-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.9</version>
+    </dependency>
   </dependencies>
 
   <build>
